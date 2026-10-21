@@ -288,22 +288,31 @@ p {
 .aside-caption {
   margin-bottom: 2px;
   color: var(--muted);
-  font-size: 12px;
+  font-size: 17px;
   line-height: 1.7;
+}
+
+.portrait {
+  display: block;
+  aspect-ratio: auto;
+  padding: 6px;
+  border: 1px solid #d4dee7;
+  border-radius: 6px;
+  background: #fff;
+  box-shadow: 0 4px 16px rgb(38 58 77 / 8%);
 }
 
 .portrait img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: 50% 35%;
+  height: auto;
+  border-radius: 2px;
   display: block;
 }
 
 .portrait::after { content: none; }
 
 .profile-aside > a {
-  font-size: 12px;
+  font-size: 15px;
 }
 
 .section-block {
@@ -1361,7 +1370,6 @@ html[lang="zh-CN"] .contact-copy h2 {
   <main id="main" class="container">
     <section id="about" class="about-grid" aria-labelledby="name">
       <div class="intro">
-        <p class="eyebrow" data-i18n="eyebrow">A PERSONAL RESEARCH SPACE</p>
         <h1 id="name">Haoxiang Zhao<span class="name-dot">.</span></h1>
         <p class="affiliation"><a href="https://en.hfut.edu.cn/" target="_blank" rel="noopener noreferrer" data-i18n="affiliation">Hefei University of Technology</a> · <a href="https://en.ustc.edu.cn/" target="_blank" rel="noopener noreferrer" data-i18n="affiliation2">University of Science and Technology of China</a></p>
         <p class="bio" data-i18n="bio1">I am Haoxiang Zhao, a fourth-year undergraduate majoring in Information Security at the School of Computer Science and Information Engineering, Hefei University of Technology, where I began my studies in 2023. In 2026, I was admitted through recommendation to the master's program at the School of Software Engineering, University of Science and Technology of China, with enrollment expected in 2027.</p>
@@ -1482,7 +1490,7 @@ html[lang="zh-CN"] .contact-copy h2 {
 
   const zh = {
     skip: '跳转到正文', navAbout: '关于我', navPapers: '精选论文', navInternships: '实习经历', navContact: '联系',
-    eyebrow: '个人学术主页', affiliation: '合肥工业大学', affiliation2: '中国科学技术大学',
+    affiliation: '合肥工业大学', affiliation2: '中国科学技术大学',
     bio1: '我是赵浩翔，目前是一名大四学生。2023 年，我进入合肥工业大学计算机与信息学院，攻读信息安全专业本科；2026 年保研至中国科学技术大学软件学院，将攻读硕士学位，预计于 2027 年入学。',
     bio2: '我的研究兴趣包括基于世界模型的 3D/4D 场景重建、基于扩散模型的图片与视频生成，以及多模态表征学习。',
     selectedWork: '查看研究工作 ↓', interestsTitle: '研究方向',
